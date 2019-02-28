@@ -8,7 +8,10 @@
   <body>
     <script type="text/javascript">
     var animals = ["Platypus","Narwhal","Moose","Greyhound","Falcon"]
-    d3.select("body").selectAll("p").data(animals).enter().append("p")
+    d3.select("body").selectAll("p")
+    .data(animals)
+    .enter()
+    .append("p")
     .text(function(d) {return d; });
     </script>
   </body>
