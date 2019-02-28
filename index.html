@@ -7,7 +7,6 @@
   </head>
   <body>
     <script type="text/javascript">
-    d3.select("body").append("p").text("New Paragraph");
     var animals = ["Platypus","Narwhal","Moose","Greyhound","Falcon"]
     d3.select("body").selectAll("p").data(animals).enter().append("p")
     .text(function(d) {return d; });
